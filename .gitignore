@@ -32,6 +32,13 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.local.example
+
+# database (regenerable)
+/data/finz.db*
+
+# dev server logs
+/logs/
 
 # vercel
 .vercel
