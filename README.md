@@ -1,5 +1,7 @@
 # FINZ — AI-Native Financial Review
 
+**Live demo: https://finz-financial-review-lake.vercel.app** (Vercel + Turso/libSQL)
+
 An AI-native financial review application that turns raw bank transactions into an explainable
 monthly P&L: ingest → categorize → review → calculate → explain → investigate.
 
