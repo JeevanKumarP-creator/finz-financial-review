@@ -1,6 +1,7 @@
 import { loadHistory, runAnalyst, seedGreeting, clearHistory } from "@/lib/ai/analyst";
 
 export const dynamic = "force-dynamic";
+export const maxDuration = 300;
 
 export async function GET(): Promise<Response> {
   const [history, greeting] = await Promise.all([loadHistory(30), seedGreeting()]);

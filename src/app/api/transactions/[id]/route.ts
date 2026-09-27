@@ -2,6 +2,7 @@ import { applyCorrection, getTransaction } from "@/lib/transactions";
 import { scanReviewItems } from "@/lib/review";
 
 export const dynamic = "force-dynamic";
+export const maxDuration = 300;
 
 type Ctx = { params: Promise<{ id: string }> };
 

@@ -5,6 +5,7 @@ import { allAdjacentVariances } from "@/lib/variance";
 import { aiConfigured, aiModel } from "@/lib/ai/client";
 
 export const dynamic = "force-dynamic";
+export const maxDuration = 300;
 
 export async function GET(): Promise<Response> {
   const [totals, classified, reviewCounts, highOpen, corrections] = await Promise.all([

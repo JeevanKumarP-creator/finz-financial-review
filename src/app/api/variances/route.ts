@@ -2,6 +2,7 @@ import { allAdjacentVariances, computeVariance } from "@/lib/variance";
 import { buildVarianceEvidence, explainVariance } from "@/lib/ai/explain";
 
 export const dynamic = "force-dynamic";
+export const maxDuration = 300;
 
 export async function GET(request: Request): Promise<Response> {
   const q = new URL(request.url).searchParams;

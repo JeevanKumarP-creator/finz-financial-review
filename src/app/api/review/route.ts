@@ -2,6 +2,7 @@ import { qAll } from "@/lib/db";
 import { scanReviewItems } from "@/lib/review";
 
 export const dynamic = "force-dynamic";
+export const maxDuration = 300;
 
 export interface ReviewItemRow {
   id: number;

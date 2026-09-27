@@ -2,6 +2,7 @@ import { computeAllPnl, computePnlForMonth } from "@/lib/pnl";
 import { listMonthsWithCounts } from "@/lib/pnl";
 
 export const dynamic = "force-dynamic";
+export const maxDuration = 300;
 
 export async function GET(request: Request): Promise<Response> {
   const month = new URL(request.url).searchParams.get("month");

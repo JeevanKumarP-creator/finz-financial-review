@@ -2,6 +2,7 @@ import { countTransactions, loadTransactions } from "@/lib/transactions";
 import type { Treatment } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
+export const maxDuration = 300;
 
 export async function GET(request: Request): Promise<Response> {
   const url = new URL(request.url);
